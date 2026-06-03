@@ -10,11 +10,12 @@ function App() {
   const [loading, setLoading] = useState(false);
 const [displayedScript, setDisplayedScript] = useState("");
   const generateScript = async () => {
-    try {
+    try { 
       setLoading(true);
 
       const response = await axios.post(
         "https://viral-script-generator-a83t.onrender.com/api/generate-script",
+        
         {
           topic,
           audience,
