@@ -14,7 +14,7 @@ const [displayedScript, setDisplayedScript] = useState("");
       setLoading(true);
 
       const response = await axios.post(
-        "http://localhost:5000/api/generate-script",
+        "https://viral-script-generator-a83t.onrender.com/api/generate-script",
         {
           topic,
           audience,
